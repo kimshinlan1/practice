@@ -16,10 +16,13 @@ class HomeController extends AbstractController
     }
 
     /**
-     * @return \Symfony\Component\HttpFoundation\Response
      * @Route("/welcome",name="welcome_page")
+     * @return \Symfony\Component\HttpFoundation\Response
      */
-    public function welcome(){
-        return $this->render("welcome/welcome.html.twig");
+    public function welcome()
+    {
+        return $this->render("welcome/welcome.html.twig", [
+            "my_variable" => "Nhi Keo"
+        ]);
     }
 }

@@ -20,12 +20,15 @@
     <nav class="navbar navbar-expand-sm navbar-dark bg-dark">
         <div class="container">
 
-            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="{{path('welcome_page')}}">Home</a>
 
             <div class="collapse navbar-collapse">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item">
-                        <a class="nav-link" href="href="{{ path('app_homepage') }}">Hello Page</a>
+                        <a href="{{ path('home_page') }}" class="nav-link"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="{{ path('contact') }}" class="nav-link"></a>
                     </li>
                 </ul>
             </div>
@@ -43,5 +46,7 @@
             lacinia mollis.</p>
     </div>
 </main>
+
+<h1>{{ my_variable }}</h1>
 </body>
 </html>
